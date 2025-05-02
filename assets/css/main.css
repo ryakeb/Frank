@@ -1941,6 +1941,7 @@ section,
 .paragraph-block {
   margin: 0 auto 24px auto;
   max-width: 850px;
+  /* text-align: left; */
 }
 
 /* .bangers-text {
