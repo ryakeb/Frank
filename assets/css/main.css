@@ -1844,22 +1844,16 @@ section,
 .starter-section {
   /* Add your styles here */
 }
-.bangers-text {
-  font-family: 'Bangers', cursive;
-  color: #f9d423;
-  font-weight: normal;
-  font-size: 1.6em;
-  text-shadow: 2px 2px 0 #000;
-  letter-spacing: 1px;
-}
+
 .bangers-frank {
   font-family: 'Bangers', cursive;
   color: #9809cc;
   font-weight: normal;
-  font-size: 1.6em;
+  font-size: 1.5em;
   text-shadow: 2px 2px 0 #000;
   letter-spacing: 1px;
 }
+
 
 .hero-text-extended p {
   font-size: 24px;
@@ -1902,18 +1896,7 @@ section,
   margin-top: 10px;
 }
 
-/*--------------------------------------------------------------
-# Hero Style Text (matches Hero phrase style)
---------------------------------------------------------------*/
-.hero-style-text {
-  font-family: var(--default-font);
-  font-size: 24px;
-  color: color-mix(in srgb, var(--default-color), transparent 10%);
-  margin: 10px 0;
-  max-width: 1000px;
-  margin-left: auto;
-  margin-right: auto;
-}
+
 
 /*--------------------------------------------------------------
 # Fade Effect Utility
@@ -1926,3 +1909,56 @@ section,
 .fade.show {
   opacity: 1;
 }
+
+/*--------------------------------------------------------------
+# Custom Font Size Utilities
+--------------------------------------------------------------*/
+/* For general text (default font, slightly reduced for better readability) */
+.font-default {
+  font-size: 20px !important;
+}
+
+/* For emphasized text using Bangers font, with slightly increased size */
+.font-bangers {
+  font-family: 'Bangers', cursive !important;
+  font-size: 28px !important;
+}
+
+/*--------------------------------------------------------------
+# Custom Text Utilities
+--------------------------------------------------------------*/
+
+/* Yellow Bangers-styled highlight */
+.highlight-bangers {
+  font-family: 'Bangers', cursive;
+  color: #f9d423;
+  font-size: 28px;
+  text-shadow: 2px 2px 0 #000;
+  letter-spacing: 1px;
+}
+
+/* For layout control on paragraph blocks */
+.paragraph-block {
+  margin: 0 auto 24px auto;
+  max-width: 850px;
+}
+
+/* .bangers-text {
+  font-family: 'Bangers', cursive;
+  color: #f9d423;
+  font-weight: normal;
+  font-size: 1.8em;
+  text-shadow: 2px 2px 0 #000;
+  letter-spacing: 1px;
+} */
+
+/* .hero-style-text {
+  font-family: var(--default-font);
+  font-size: 22px;
+  font-weight: normal;
+  color: color-mix(in srgb, var(--default-color), transparent 10%);
+  margin: 10px 0;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+} */
