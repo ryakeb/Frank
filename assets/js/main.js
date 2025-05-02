@@ -207,16 +207,47 @@
   document.addEventListener('scroll', navmenuScrollspy);
 
   /**
-   * Toggle Read More button text
+   * Toggle Read More buttons for two-part Frank text
    */
-  const readMoreBtn = document.querySelector('.read-more-btn');
-  const frankText = document.getElementById('frank-text');
+  const readMore1 = document.getElementById('read-more-1');
+  const frankPart1 = document.getElementById('frank-text-part-1');
+  const frankPart2 = document.getElementById('frank-text-part-2');
+  const readMore2Wrapper = document.getElementById('read-more-2-wrapper');
+  const readMore2 = document.getElementById('read-more-2');
 
-  if (readMoreBtn && frankText) {
-    readMoreBtn.addEventListener('click', function () {
-      frankText.classList.toggle('expanded');
-      frankText.scrollIntoView({ behavior: 'smooth', block: 'start' });
-      this.textContent = frankText.classList.contains('expanded') ? 'Read less...' : 'Read more...';
+if (readMore1 && frankPart1 && frankPart2 && readMore2Wrapper) {
+  frankPart1.classList.add('fade'); // ensure fade effect class is applied
+
+  readMore1.addEventListener('click', function () {
+    frankPart1.classList.add('expanded', 'show');
+    frankPart1.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    readMore1.style.display = 'none';
+    frankPart2.style.display = 'block';
+    readMore2Wrapper.style.display = 'block';
+  });
+}
+
+  if (readMore2 && frankPart1 && frankPart2 && readMore1 && readMore2Wrapper) {
+    let isExpanded = false;
+    frankPart2.classList.add('fade'); // ensure fade class is always applied
+
+    readMore2.addEventListener('click', function () {
+      isExpanded = !isExpanded;
+
+      if (isExpanded) {
+        frankPart2.classList.add('expanded', 'show');
+        frankPart2.style.display = 'block';
+        this.textContent = 'Read less...';
+        frankPart2.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      } else {
+        frankPart1.classList.remove('expanded');
+        frankPart2.classList.remove('expanded', 'show');
+        frankPart2.style.display = 'none';
+        readMore2Wrapper.style.display = 'none';
+        readMore1.style.display = 'inline-block';
+        this.textContent = 'Read more...';
+        readMore1.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
     });
   }
 })();

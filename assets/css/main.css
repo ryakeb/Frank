@@ -1883,6 +1883,7 @@ section,
 
 .read-more-btn {
   margin-top: 0;
+  margin-bottom: 0;
   background: none;
   border: 2px solid #f9d423;
   color: #f9d423;
@@ -1897,6 +1898,10 @@ section,
   color: black;
 }
 
+#read-more-2-wrapper {
+  margin-top: 10px;
+}
+
 /*--------------------------------------------------------------
 # Hero Style Text (matches Hero phrase style)
 --------------------------------------------------------------*/
@@ -1908,4 +1913,16 @@ section,
   max-width: 1000px;
   margin-left: auto;
   margin-right: auto;
+}
+
+/*--------------------------------------------------------------
+# Fade Effect Utility
+--------------------------------------------------------------*/
+.fade {
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.fade.show {
+  opacity: 1;
 }
