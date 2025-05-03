@@ -1841,9 +1841,9 @@ section,
 /*--------------------------------------------------------------
 # Starter Section Section
 --------------------------------------------------------------*/
-.starter-section {
+/* .starter-section { */
   /* Add your styles here */
-}
+/* } */
 
 .bangers-frank {
   font-family: 'Bangers', cursive;
@@ -1852,6 +1852,46 @@ section,
   font-size: 1.5em;
   text-shadow: 2px 2px 0 #000;
   letter-spacing: 1px;
+}
+
+
+
+/* Luckiest Guy cartoon font */
+.lucky-text {
+  font-family: 'Luckiest Guy', cursive;
+}
+
+
+/* Luckiest Guy titles */
+.lucky-title {
+  font-family: 'Luckiest Guy', cursive;
+  font-size: 2.4em; /* ≈38 px */
+  line-height: 1.1;
+  text-shadow: 1px 1px 0 #000; /* light relief */
+}
+
+/* Luckiest Guy body text */
+.lucky-body {
+  font-family: 'Luckiest Guy', cursive;
+  font-size: 1.2em; /* ≈19 px */
+  font-weight: 100;
+  line-height: 1.4;
+}
+
+/* Comic Neue multi-weight font */
+.comic-light {
+  font-family: 'Comic Neue', cursive;
+  font-weight: 300;
+}
+
+.comic-regular {
+  font-family: 'Comic Neue', cursive;
+  font-weight: 400;
+}
+
+.comic-bold {
+  font-family: 'Comic Neue', cursive;
+  font-weight: 700;
 }
 
 
@@ -1940,7 +1980,7 @@ section,
 /* For layout control on paragraph blocks */
 .paragraph-block {
   margin: 0 auto 24px auto;
-  max-width: 850px;
+  max-width: 900px;
   /* text-align: left; */
 }
 
