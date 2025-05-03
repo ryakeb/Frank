@@ -1,18 +1,4 @@
-- portfolio en commentaire
-team + dropdown ca saute
 
-Bouton get started => t'amene en bas de page contact
-
-Service : 6 services
-
-police BANGERS
-
-Training (main chapeau) and coaching
-
-
-------
-services : sans images / juste les icones
-bouton : Our story
 
 
 MOBILE:

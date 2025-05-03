@@ -1907,6 +1907,15 @@ section,
   font-weight: 700;
 }
 
+.font-raleway   { 
+font-family: 'Raleway', sans-serif; 
+}
+
+.font-montserrat{ 
+font-family: 'Montserrat', sans-serif; 
+font-weight: lighter;
+}
+
 
 .hero-text-extended p {
   font-size: 24px;
