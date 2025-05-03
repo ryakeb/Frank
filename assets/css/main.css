@@ -22,7 +22,7 @@
   --background-color: #ffffff; /* Background color for the entire website, including individual sections */
   --default-color: #444444; /* Default color used for the majority of the text content across the entire website */
   --heading-color: #273d4e; /* Color for headings, subheadings and title throughout the website */
-  --accent-color: #ff4a17; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
+  --accent-color: #4169E1; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
   --surface-color: #ffffff; /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
   --contrast-color: #ffffff; /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
 }
@@ -30,7 +30,7 @@
 /* Nav Menu Colors - The following color variables are used specifically for the navigation menu. They are separate from the global colors to allow for more customization options */
 :root {
   --nav-color: #e5eaee;  /* The default color of the main navmenu links */
-  --nav-hover-color: #ff4a17; /* Applied to main navmenu links when they are hovered over or active */
+  --nav-hover-color: #f9d423; /* Applied to main navmenu links when they are hovered over or active */
   --nav-mobile-background-color: #ffffff; /* Used as the background color for mobile navigation menu */
   --nav-dropdown-background-color: #ffffff; /* Used as the background color for dropdown items that appear when hovering over primary navigation items */
   --nav-dropdown-color: #444444; /* Used for navigation links of the dropdown items in the navigation menu. */
@@ -1081,19 +1081,10 @@ section,
 /*--------------------------------------------------------------
 # Services Section
 --------------------------------------------------------------*/
-.services .img {
-  border-radius: 8px;
-  overflow: hidden;
-}
-
-.services .img img {
-  transition: 0.6s;
-}
-
 .services .details {
-  background: color-mix(in srgb, var(--surface-color), transparent 5%);
+  background-color: rgba(28, 28, 28, 0.8);
   padding: 50px 30px;
-  margin: -100px 30px 0 30px;
+  margin: 0 30px 30px;
   transition: all ease-in-out 0.3s;
   position: relative;
   text-align: center;
@@ -1103,12 +1094,12 @@ section,
 
 .services .details .icon {
   margin: 0;
-  width: 72px;
-  height: 72px;
-  background: var(--accent-color);
-  color: var(--contrast-color);
-  border: 6px solid var(--contrast-color);
-  border-radius: 50px;
+  width: 80px;
+  height: 80px;
+  background-color: #fff;
+  color: #f9d423;
+  border: 4px solid #000;
+  border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1116,9 +1107,15 @@ section,
   font-size: 28px;
   transition: ease-in-out 0.3s;
   position: absolute;
-  top: -36px;
-  left: calc(50% - 36px);
+  top: -40px;
+  left: calc(50% - 40px);
+  transform: rotate(45deg);
 }
+
+.services .details .icon i {
+  transform: rotate(-45deg);
+}
+
 
 .services .details h3 {
   font-weight: 700;
@@ -1847,9 +1844,9 @@ section,
 
 .bangers-frank {
   font-family: 'Bangers', cursive;
-  color: #9809cc;
+  color: #4169E1;
   font-weight: normal;
-  font-size: 1.5em;
+  font-size: 2.2em;
   text-shadow: 2px 2px 0 #000;
   letter-spacing: 1px;
 }
@@ -2003,3 +2000,13 @@ section,
   margin-left: auto;
   margin-right: auto;
 } */
+
+
+/* Services Section Background Image */
+#services {
+  background: url('../img2/desert.jpeg') no-repeat center center;
+  background-size: cover;
+  background-position: center;
+  /* Optional: ensure underlying color is transparent */
+  background-color: transparent;
+}
