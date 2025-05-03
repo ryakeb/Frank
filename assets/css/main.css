@@ -1048,6 +1048,22 @@ section,
   top: calc(50% - 47px);
 }
 
+/* Light black border around About images */
+#about .img-fluid {
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+/* Hover zoom effect for About images */
+#about .img-fluid:hover {
+  transform: scale(1.1);
+}
+
+/* Prevent image overflow during zoom */
+#about .col-md-4 {
+  overflow: hidden;
+}
+
 /*--------------------------------------------------------------
 # Stats Section
 --------------------------------------------------------------*/
@@ -2009,4 +2025,13 @@ section,
   background-position: center;
   /* Optional: ensure underlying color is transparent */
   background-color: transparent;
+}
+
+
+/* About Carousel Modal Image Sizing */
+#aboutCarousel .carousel-item img {
+  max-height: 90vh;       /* never exceed 90% of viewport height */
+  width: auto;            /* maintain aspect ratio */
+  object-fit: contain;    /* ensure the entire image is visible */
+  margin: auto;           /* center horizontally */
 }
