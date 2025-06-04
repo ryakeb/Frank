@@ -2056,3 +2056,11 @@ font-weight: lighter;
     );
   }
 }
+
+@media (max-width: 991px) {
+  /* Réduit la taille du texte du <p> dans le titre de la section About */
+  #about .section-title p {
+    font-size: 0.9rem; /* Ajuste ici la valeur (ex : 0.9rem, 1rem, 1.1rem) selon le rendu souhaité */
+    line-height: 1.3; /* Facultatif pour un meilleur espacement vertical */
+  }
+}
