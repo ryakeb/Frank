@@ -237,7 +237,7 @@ h6 {
 }
 
 .header .logo img {
-  max-height: 36px;
+  max-height: none;
   margin-right: 8px;
 }
 
@@ -1867,6 +1867,10 @@ section,
   letter-spacing: 1px;
 }
 
+.bangers-title {
+  font-family: 'Bangers', cursive;
+  color: #4169E1
+}
 
 
 /* Luckiest Guy cartoon font */
@@ -2064,3 +2068,56 @@ font-weight: lighter;
     line-height: 1.3; /* Facultatif pour un meilleur espacement vertical */
   }
 }
+/* Logo sizing */
+.logo-img {
+  height: 64px;
+  width: auto;
+  max-height: 100px;
+}
+
+@media (max-width: 768px) {
+  .logo-img {
+    height: 48px;
+  }
+}
+/*--------------------------------------------------------------
+# Skimmer Intro Responsive Styles
+--------------------------------------------------------------*/
+.skimmer-intro {
+  font-size: 0.9rem;
+  color: #4169E1;
+  font-family: 'Bangers', cursive;
+  margin-bottom: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .skimmer-intro {
+    font-size: 1.05rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .skimmer-intro {
+    font-size: 1.2rem;
+  }
+}
+
+/* === Override: About section skimmer-intro ======================= */
+.section-title p.skimmer-intro {
+  font-family: 'Bangers', cursive !important;
+  color: #4169E1 !important;
+  font-size: 1.3rem !important;
+}
+
+@media (min-width: 768px) {
+  .section-title p.skimmer-intro {
+    font-size: 1.6rem !important;
+  }
+}
+
+@media (min-width: 1200px) {
+  .section-title p.skimmer-intro {
+    font-size: 1.9rem !important;
+  }
+}
+/* ============================================================== */
